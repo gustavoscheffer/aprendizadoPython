@@ -1,0 +1,21 @@
+Delivery has failed to these recipients or groups:
+
+newton.nagoshi@nelsongp.com.br
+Your message wasn't delivered due to a permission or security issue. It may have been rejected by a moderator, the address may only accept email from certain senders, or another restriction may be preventing delivery.
+
+The following organization rejected your message: mx.terraempresas.com.br.
+
+ 
+
+Diagnostic information for administrators:
+
+Generating server: STO-barracuda.nelsonglobalproducts.com
+
+newton.nagoshi@nelsongp.com.br
+mx.terraempresas.com.br
+Remote Server returned '<mx.terraempresas.com.br #4.7.1 smtp; 450 4.7.1 Client host rejected: cannot find your hostname, [71.13.132.162]>'
+
+Original message headers:
+Return-Path: <Sergio.Carvalho@nelsonglobalproducts.com>X-ASG-Debug-ID: 1453824215-08dccc3cf377210001-x7n7FvReceived: from owa.nelsongp.com (ngp-ex-01-v.ngp.local [10.186.1.121]) by STO-barracuda.nelsonglobalproducts.com with ESMTP id 4aBqenqzLQ6OEfz1 for <newton.nagoshi@nelsongp.com.br>; Tue, 26 Jan 2016 10:03:35 -0600 (CST)X-Barracuda-Envelope-From: Sergio.Carvalho@nelsonglobalproducts.comX-ASG-Whitelist: ClientReceived: from NGP-EX-01-V.ngp.local (10.186.1.121) by NGP-EX-01-V.ngp.local (10.186.1.121) with Microsoft SMTP Server (TLS) id 15.0.1104.5; Tue, 26 Jan 2016 10:02:35 -0600Received: from NGP-EX-01-V.ngp.local ([fe80::48cb:1e9b:6583:30c7]) by NGP-EX-01-V.ngp.local ([fe80::48cb:1e9b:6583:30c7%18]) with mapi id 15.00.1104.000; Tue, 26 Jan 2016 10:02:34 -0600From: Sergio Carvalho <Sergio.Carvalho@nelsonglobalproducts.com>To: NGP_Newton Nagoshi <newton.nagoshi@nelsongp.com.br>Subject: RE: FaturamentoThread-Topic: FaturamentoX-ASG-Orig-Subj: RE: FaturamentoThread-Index: AdFUaFYJdTWH6qNwQXOUxE3n0u5qSgD32vmAAAL9zJAAB0HaAAAHdp8ADate: Tue, 26 Jan 2016 16:02:33 +0000Message-ID: <9fb60ce1851547eeb21298d71ccd03e8@NGP-EX-01-V.ngp.local>References: <6bcbb51c7e9043c99c4e9f1b9050c439@NGP-EX-01-V.ngp.local> <005f01d15815$7893e190$69bba4b0$@tubopress.com.br> <f092a9dcd31245cf9c503ffea90ceb36@NGP-EX-01-V.ngp.local> <005e01d1583e$77565be0$660313a0$@nelsongp.com.br>In-Reply-To: <005e01d1583e$77565be0$660313a0$@nelsongp.com.br>Accept-Language: en-USContent-Language: en-USX-MS-Has-Attach: yesX-MS-TNEF-Correlator:x-ms-exchange-transport-fromentityheader: Hostedx-originating-ip: [96.28.194.231]Content-Type: multipart/related;        boundary="_004_9fb60ce1851547eeb21298d71ccd03e8NGPEX01Vngplocal_";        type="multipart/alternative"MIME-Version: 1.0X-Barracuda-Connect: ngp-ex-01-v.ngp.local[10.186.1.121]X-Barracuda-Start-Time: 1453824215X-Barracuda-URL: https://10.186.1.137:443/cgi-mod/mark.cgiX-Virus-Scanned: by bsmtpd at nelsonglobalproducts.com
+X-Barracuda-BRTS-Status: 1
+

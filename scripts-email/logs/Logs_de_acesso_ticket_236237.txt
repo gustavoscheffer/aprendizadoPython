@@ -1,0 +1,31 @@
+
+Todos os logs de acesso abaixo foram feitos via IMAP.
+
+>>> Pesquisa feita a partir de 01-12-2015 <<<
+
+2015-12-22T14:21:16+00:00 10.235.200.173 user=<lrfp@terra.com.br>,rip=10.235.200.168,
+2015-12-22T14:22:15+00:00 10.235.200.177 user=<lrfp@terra.com.br>,rip=10.235.200.168,
+2015-12-22T14:22:39+00:00 10.235.200.175 user=<lrfp@terra.com.br>,rip=10.235.200.168,
+2015-12-22T14:22:57+00:00 10.235.200.173 user=<lrfp@terra.com.br>,rip=10.235.200.168,
+2015-12-22T14:23:15+00:00 10.235.200.171 user=<lrfp@terra.com.br>,rip=10.235.200.168,
+2015-12-22T14:23:33+00:00 10.235.200.177 user=<lrfp@terra.com.br>,rip=10.235.200.168,
+2015-12-22T14:23:49+00:00 10.235.200.176 user=<lrfp@terra.com.br>,rip=10.235.200.168,
+2015-12-22T14:24:07+00:00 10.235.200.178 user=<lrfp@terra.com.br>,rip=10.235.200.168,
+2015-12-22T14:24:23+00:00 10.235.200.171 user=<lrfp@terra.com.br>,rip=10.235.200.168,
+2015-12-22T14:24:29+00:00 10.235.200.172 user=<lrfp@terra.com.br>,rip=10.235.200.168,
+2016-01-04T15:41:39+00:00 10.235.200.178 user=<lrfp@terra.com.br>,rip=10.235.200.166,
+2016-01-04T23:58:09+00:00 10.235.200.178 user=<lrfp@terra.com.br>,rip=10.235.200.165,
+2016-01-04T23:58:57+00:00 10.235.200.173 user=<lrfp@terra.com.br>,rip=10.235.200.165,
+2016-01-04T23:59:01+00:00 10.235.200.175 user=<lrfp@terra.com.br>,rip=10.235.200.165,
+2016-01-04T23:59:14+00:00 10.235.200.177 user=<lrfp@terra.com.br>,rip=10.235.200.165,
+2016-02-23T18:00:25+00:00 10.235.200.172 user=<lrfp@terra.com.br>,rip=10.235.200.168,
+2016-02-23T18:00:47+00:00 10.235.200.174 user=<lrfp@terra.com.br>,rip=10.235.200.168,
+
+>>> Até 07-03-2016 <<< 
+
+
+Detalhes de alguns campos:
+Hora de acesso (UTC): 2015-12-22T14:21:16+00:00
+Endereço ip do servidor: 10.235.200.178
+Usuário que acessou: user=<lrfp@terra.com.br>
+IP do usurário: rip=10.235.200.168

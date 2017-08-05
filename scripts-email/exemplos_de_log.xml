@@ -1,0 +1,68 @@
+#pesquisa todos os algarismos até a virgula
+#Tem que contemplar diversos tipos de msgid
+msgid=[a-zA-Z0-9]+,
+
+LIST=([\d]+/){2}[\d]+
+ou
+LIST=[\d]+/[\d]+/[\d]+
+
+#pesquisa todos os algarismos até a virgula
+# '+' Matches one or more consecutive `\d` characters.
+uid=[\d]+,
+
+
+<delecao_imap>
+	Para ter certeza da deleção precisamos que os campos seguintes sejam equivalentes: <acao>: && box=<pasta> && uid=<id> && msgid=<id_da_msg>
+	<Outlook>
+		- Mensagens que são movidas entre uma pasta e outra tem logs de delete/expunge/save
+		- Mensagens que são deletadas e que vão para lixeira usando DEL apenas, tem logs de delete/expunge/save
+		- Mesagens que são excluídas direto, de qualter pasta usando SHIFT+DELETE, tem apenas delete/expunge
+		<deletada_DIRETO_---SHIFT_DELETE---_da_pasta_INBOX>
+			imap[27194]: user jonatan.vsilva!terra (60160399#perm!terra) from 200.176.1.100: delete: box=INBOX, uid=45, msgid=aV4UbqeUjaXxTaV4VbWNFk, size=5159
+			imap[27194]: user jonatan.vsilva!terra (60160399#perm!terra) from 200.176.1.100: expunge: box=INBOX, uid=45, msgid=aV4UbqeUjaXxTaV4VbWNFk, size=5159
+
+			imap[16117]: user jonatan.vsilva!terra (60160399#perm!terra) from 200.176.1.100: delete: box=INBOX, uid=48, msgid=aUjIbckAMYOCyaUjLb0X4A, size=5610
+			imap[16117]: user jonatan.vsilva!terra (60160399#perm!terra) from 200.176.1.100: expunge: box=INBOX, uid=48, msgid=aUjIbckAMYOCyaUjLb0X4A, size=5610
+		</deletada_DIRETO_---SHIFT_DELETE---_da_pasta_INBOX>
+		<deletada_da_INBOX_--DEL--_para_a_Lixeira>
+			imap[27194]: user jonatan.vsilva!terra (60160399#perm!terra) from 200.176.1.100: delete: box=INBOX, uid=44, msgid=aUjIbckAMYOCyaUjLb0X4A, size=5124
+			imap[27194]: user jonatan.vsilva!terra (60160399#perm!terra) from 200.176.1.100: expunge: box=INBOX, uid=44, msgid=aUjIbckAMYOCyaUjLb0X4A, size=5124
+			imap[13744]: user jonatan.vsilva!terra (60160399#perm!terra) from 200.176.1.100: save: box=Lixeira, uid=46, msgid=aUjIbckAMYOCyaUjLb0X4A, size=5610
+
+			imap[16117]: user jonatan.vsilva!terra (60160399#perm!terra) from 200.176.1.100: delete: box=INBOX, uid=51, msgid=<004301d1f980$d6ec8550$84c58ff0$@terra.com.br>, size=4390
+			imap[16117]: user jonatan.vsilva!terra (60160399#perm!terra) from 200.176.1.100: expunge: box=INBOX, uid=51, msgid=<004301d1f980$d6ec8550$84c58ff0$@terra.com.br>, size=4390
+			imap[32695]: user jonatan.vsilva!terra (60160399#perm!terra) from 200.176.1.100: save: box=Lixeira, uid=48, msgid=<004301d1f980$d6ec8550$84c58ff0$@terra.com.br>, size=4390
+			
+			imap[30087]: user jonatan.vsilva!terra (60160399#perm!terra) from 200.176.1.100: delete: box=INBOX, uid=52, msgid=<OID_1471545107184300_0jonatan.vsilva@terra.com.br>, size=1020
+			imap[30087]: user jonatan.vsilva!terra (60160399#perm!terra) from 200.176.1.100: expunge: box=INBOX, uid=52, msgid=<OID_1471545107184300_0jonatan.vsilva@terra.com.br>, size=1020
+			imap[32316]: user jonatan.vsilva!terra (60160399#perm!terra) from 200.176.1.100: save: box=Lixeira, uid=49, msgid=<OID_1471545107184300_0jonatan.vsilva@terra.com.br>, size=1020
+		</deletada_da_INBOX_--DEL--_para_a_Lixeira>
+		<deletada_da_lixeira>
+			imap[8251]: user jonatan.vsilva!terra (60160399#perm!terra) from 200.176.1.100: delete: box=Lixeira, uid=45, msgid=a9JRbvEHOCGARa9KEb7UV3, size=3353
+			imap[8251]: user jonatan.vsilva!terra (60160399#perm!terra) from 200.176.1.100: expunge: box=Lixeira, uid=45, msgid=a9JRbvEHOCGARa9KEb7UV3, size=3353
+
+			imap[27268]: user jonatan.vsilva!terra (60160399#perm!terra) from 200.176.1.100: delete: box=Lixeira, uid=49, msgid=<OID_1471545107184300_0jonatan.vsilva@terra.com.br>, size=1020
+			imap[27268]: user jonatan.vsilva!terra (60160399#perm!terra) from 200.176.1.100: expunge: box=Lixeira, uid=49, msgid=<OID_1471545107184300_0jonatan.vsilva@terra.com.br>, size=1020
+
+			imap[23909]: user jonatan.vsilva!terra (60160399#perm!terra) from 200.176.1.100: delete: box=Lixeira, uid=50, msgid=<OID_1471543155535876_0jonatan.vsilva@terra.com.br>, size=1095
+			imap[23909]: user jonatan.vsilva!terra (60160399#perm!terra) from 200.176.1.100: expunge: box=Lixeira, uid=50, msgid=<OID_1471543155535876_0jonatan.vsilva@terra.com.br>, size=1095
+		</deletada_da_lixeira>
+		<deletada_DIRETO_SHIFT_DELETE_da_pasta_tst>
+			imap[27194]: user jonatan.vsilva!terra (60160399#perm!terra) from 200.176.1.100: delete: box=tst, uid=4, msgid=aRDVbZ4Q2vJiHaRG5bq3Vh, size=3348
+			imap[27194]: user jonatan.vsilva!terra (60160399#perm!terra) from 200.176.1.100: expunge: box=tst, uid=4, msgid=aRDVbZ4Q2vJiHaRG5bq3Vh, size=3348
+		</deletada_DIRETO_SHIFT_DELETE_da_pasta_tst>
+	</Outlook>
+</delecao_imap>
+
+
+
+
+
+
+imap[<id_do_conjunto_de_tarefas???????>]: user <email_terra> (<id_perm>)
+from <ip_do_cliente_de_email>:
+<acao>: box:=<qq_pasta_na_caixa_postal>
+uid=<id_para_determinada_acao_em_determinada_pasta>
+msgid=<id_da_mensagem>
+size=<tamanho_da_mensagem_em_bytes>
+

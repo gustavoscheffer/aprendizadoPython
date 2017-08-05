@@ -1,0 +1,35 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="{% static 'alunos/bootstrap/css/bootstrap.css' %}" />
+  </head>
+  <title>
+    {% block title %}New GYM{% endblock %}
+  </title>
+  <body>
+    <div class="container" id="principal">
+      <div class="container" id="cabecalho">
+        <h1> New GYM </h1>
+        <hr>
+      </div>
+      <div class="container" id="corpo">
+        {% block content %}{% endblock content %}
+      </div>
+      <footer class="container">
+        <hr>
+        <address>
+          <strong>New GYM, Inc.</strong><br>
+          Av. Latifundiarios 600<br>
+          Canoas, RS<br>
+          <abbr title="Phone">P:</abbr> (051) 999-7890
+        </address>
+
+        <address>
+          <strong>Gustavo Scheffer</strong><br>
+          <a href="mailto:#">gustavo.scheffer@outlook.com</a>
+        </address>
+      </footer>
+    </div>
+  </body>
+</html>
